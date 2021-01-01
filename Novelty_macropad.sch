@@ -395,15 +395,15 @@ F 3 "~" H 4700 2500 50  0001 C CNN
 	1    4700 2500
 	1    0    0    -1  
 $EndComp
-Text GLabel 4500 2200 0    50   Input ~ 0
+Text GLabel 4500 2600 0    50   Input ~ 0
 Col0
-Text GLabel 4500 2300 0    50   Input ~ 0
+Text GLabel 4500 2500 0    50   Input ~ 0
 Col1
 Text GLabel 4500 2400 0    50   Input ~ 0
 Col2
-Text GLabel 4500 2500 0    50   Input ~ 0
+Text GLabel 4500 2300 0    50   Input ~ 0
 Col3
-Text GLabel 4500 2600 0    50   Input ~ 0
+Text GLabel 4500 2200 0    50   Input ~ 0
 Col4
 Text GLabel 4500 2800 0    50   Input ~ 0
 Row0
@@ -415,4 +415,37 @@ U 60039BC8
 F0 "Sheet60039BC7" 50
 F1 "file60039BC7.sch" 50
 $EndSheet
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 6027E2FA
+P 5500 5000
+F 0 "H1" V 5454 5100 50  0000 L CNN
+F 1 "MountingHole" V 5545 5100 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 5500 5000 50  0001 C CNN
+F 3 "~" H 5500 5000 50  0001 C CNN
+	1    5500 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 6027FB83
+P 6450 5000
+F 0 "H2" V 6404 5100 50  0000 L CNN
+F 1 "MountingHole" V 6495 5100 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6450 5000 50  0001 C CNN
+F 3 "~" H 6450 5000 50  0001 C CNN
+	1    6450 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 6027FE85
+P 7450 5050
+F 0 "H3" V 7404 5150 50  0000 L CNN
+F 1 "MountingHole" V 7495 5150 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 7450 5050 50  0001 C CNN
+F 3 "~" H 7450 5050 50  0001 C CNN
+	1    7450 5050
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

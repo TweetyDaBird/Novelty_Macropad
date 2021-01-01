@@ -23,7 +23,7 @@ Wire Wire Line
 Connection ~ 900  2850
 Connection ~ 900  2050
 Wire Wire Line
-	6250 3400 6650 3400
+	3400 2750 3800 2750
 Wire Wire Line
 	3800 1850 3400 1850
 Wire Wire Line
@@ -89,9 +89,7 @@ XTAL1
 Text Label 1850 2850 0    50   ~ 0
 UCAP
 Wire Wire Line
-	6250 3600 6650 3600
-Wire Wire Line
-	6250 3500 6650 3500
+	3400 1550 3800 1550
 Text GLabel 3800 1650 2    50   Input ~ 0
 SCK
 Text GLabel 3800 1750 2    50   Input ~ 0
@@ -103,15 +101,15 @@ Wire Wire Line
 Wire Wire Line
 	3400 3350 3800 3350
 Wire Wire Line
-	3400 4250 3800 4250
+	3400 4350 3800 4350
 Wire Wire Line
 	3400 3050 3800 3050
+Wire Wire Line
+	3400 4250 3800 4250
 Wire Wire Line
 	3400 4150 3800 4150
 Wire Wire Line
 	3400 4050 3800 4050
-Wire Wire Line
-	3400 3950 3800 3950
 $Comp
 L power:VBUS #PWR?
 U 1 1 5D8BBB31
@@ -504,9 +502,9 @@ Connection ~ 1750 4000
 Wire Wire Line
 	1750 4000 2000 4000
 Wire Wire Line
-	6250 3200 6650 3200
+	3400 2450 3800 2450
 Wire Wire Line
-	6250 3300 6650 3300
+	3400 2550 3800 2550
 Wire Notes Line
 	750  5400 10800 5400
 $Comp
@@ -681,7 +679,7 @@ Wire Wire Line
 	1300 2550 1150 2550
 Wire Wire Line
 	1150 2650 1300 2650
-NoConn ~ 3800 3750
+NoConn ~ 3800 2850
 NoConn ~ 3800 2250
 Wire Wire Line
 	6450 2100 6500 2100
@@ -715,95 +713,22 @@ U 1 1 5F5838DC
 P 6700 2200
 F 0 "J3" H 6780 2192 50  0000 L CNN
 F 1 "Conn_01x06" H 6780 2101 50  0000 L CNN
-F 2 "Keyboard 2:PinHeader_2x03_P1.27mm_Vertical" H 6700 2200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 6700 2200 50  0001 C CNN
 F 3 "~" H 6700 2200 50  0001 C CNN
 F 4 "0" H 6700 2200 50  0001 C CNN "Fält4"
 F 5 "Pinheader" H 6700 2200 50  0001 C CNN "Manufacturer_Part_Number"
 	1    6700 2200
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5F7BBEF6
-P 6950 4750
-AR Path="/5D8219F0/5F7BBEF6" Ref="#PWR?"  Part="1" 
-AR Path="/5D6CC2CC/5F7BBEF6" Ref="#PWR?"  Part="1" 
-AR Path="/5DEF6A4C/5F7BBEF6" Ref="#PWR?"  Part="1" 
-AR Path="/5D3D0542/5F7BBEF6" Ref="#PWR?"  Part="1" 
-AR Path="/5E49A860/5F7BBEF6" Ref="#PWR?"  Part="1" 
-AR Path="/5E135D8F/5F7BBEF6" Ref="#PWR0106"  Part="1" 
-AR Path="/60039BC8/5F7BBEF6" Ref="#PWR0106"  Part="1" 
-F 0 "#PWR0106" H 6950 4600 50  0001 C CNN
-F 1 "VCC" H 6950 4900 50  0000 C CNN
-F 2 "" H 6950 4750 50  0001 C CNN
-F 3 "" H 6950 4750 50  0001 C CNN
-	1    6950 4750
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F7BC665
-P 6050 4800
-AR Path="/5D8219F0/5F7BC665" Ref="#PWR?"  Part="1" 
-AR Path="/5D6CC2CC/5F7BC665" Ref="#PWR?"  Part="1" 
-AR Path="/5E135D8F/5F7BC665" Ref="#PWR0107"  Part="1" 
-AR Path="/60039BC8/5F7BC665" Ref="#PWR0107"  Part="1" 
-F 0 "#PWR0107" H 6050 4550 50  0001 C CNN
-F 1 "GND" H 6050 4650 50  0000 C CNN
-F 2 "" H 6050 4800 50  0001 C CNN
-F 3 "" H 6050 4800 50  0001 C CNN
-	1    6050 4800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	6650 3700 6250 3700
-Wire Wire Line
-	3400 4350 3800 4350
+	3400 4450 3800 4450
 NoConn ~ 3800 2950
 Wire Wire Line
 	2150 1300 2150 1550
-$Comp
-L Jumper:Jumper_3_Open JP5
-U 1 1 5F697B90
-P 6950 4500
-F 0 "JP5" H 6950 4724 50  0000 C CNN
-F 1 "Jumper_3_Open" H 6950 4633 50  0000 C CNN
-F 2 "Keyboard 2:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels" H 6950 4500 50  0001 C CNN
-F 3 "~" H 6950 4500 50  0001 C CNN
-F 4 "0" H 6950 4500 50  0001 C CNN "Fält4"
-F 5 "Jumper" H 6950 4500 50  0001 C CNN "Manufacturer_Part_Number"
-	1    6950 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:Jumper_3_Open JP6
-U 1 1 5F698B76
-P 6050 4500
-F 0 "JP6" H 6050 4724 50  0000 C CNN
-F 1 "Jumper_3_Open" H 6050 4633 50  0000 C CNN
-F 2 "Keyboard 2:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels" H 6050 4500 50  0001 C CNN
-F 3 "~" H 6050 4500 50  0001 C CNN
-F 4 "0" H 6050 4500 50  0001 C CNN "Fält4"
-F 5 "Jumper" H 6050 4500 50  0001 C CNN "Manufacturer_Part_Number"
-	1    6050 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6050 4800 6050 4650
-Wire Wire Line
-	6950 4650 6950 4750
-Text GLabel 5800 4500 0    50   Input ~ 0
-T
-Text GLabel 7200 4500 2    50   Input ~ 0
-T
-Text GLabel 6300 4500 2    50   Input ~ 0
-S
-Text GLabel 6700 4500 0    50   Input ~ 0
-S
 Wire Wire Line
 	3800 3150 3400 3150
 Wire Wire Line
-	3400 3750 3800 3750
+	3400 2850 3800 2850
 Wire Wire Line
 	3800 2250 3400 2250
 Wire Notes Line
@@ -888,10 +813,10 @@ AR Path="/5F6ACAA0/5FB25345" Ref="ZD?"  Part="1"
 AR Path="/5F577A4E/5FB25345" Ref="ZD?"  Part="1" 
 AR Path="/60039BC8/5FB25345" Ref="ZD1"  Part="1" 
 F 0 "ZD1" H 5350 6416 50  0000 C CNN
-F 1 "SS1P3L-M3/84A" H 5350 6325 50  0000 C CNN
-F 2 "DIO_SS3P3-M3:84A" H 5350 6200 50  0001 C CNN
+F 1 "SM5817-W" H 5350 6325 50  0000 C CNN
+F 2 "Diode_SMD:D_MELF" H 5350 6200 50  0001 C CNN
 F 3 "~" H 5350 6200 50  0001 C CNN
-F 4 "SS1P3L-M3/84A" H 5350 6200 50  0001 C CNN "Manufacturer_Part_Number"
+F 4 "SM5817-W" H 5350 6200 50  0001 C CNN "Manufacturer_Part_Number"
 F 5 "Vishay" H 5350 6200 50  0001 C CNN "Manufacturer_Name"
 F 6 "625-SS1P3L-M3/84A" H 5350 6200 50  0001 C CNN "Mouser Part Number"
 F 7 "1" H 5350 6200 50  0001 C CNN "Fält4"
@@ -1264,8 +1189,6 @@ Wire Wire Line
 	4250 6600 4250 6700
 Wire Wire Line
 	4450 6200 4250 6200
-Text Notes 6650 6050 0    50   ~ 0
-Connector to \nThumbcluster RGB
 Wire Wire Line
 	1250 2050 1450 2050
 Wire Wire Line
@@ -1275,63 +1198,63 @@ Connection ~ 1450 1600
 Wire Wire Line
 	1450 1600 2050 1600
 Wire Wire Line
-	4500 1550 4450 1550
+	4500 2050 4450 2050
 $Comp
 L Device:R R?
 U 1 1 5F8BDBBC
-P 4650 1550
+P 4650 2050
 AR Path="/5D8219F0/5F8BDBBC" Ref="R?"  Part="1" 
 AR Path="/5D6CC2CC/5F8BDBBC" Ref="R?"  Part="1" 
 AR Path="/5E135D8F/5F8BDBBC" Ref="R7"  Part="1" 
 AR Path="/60039BC8/5F8BDBBC" Ref="R7"  Part="1" 
-F 0 "R7" V 4730 1550 50  0000 C CNN
-F 1 "33" V 4650 1550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 1550 50  0001 C CNN
-F 3 "" H 4650 1550 50  0001 C CNN
-F 4 "1" H 4650 1550 50  0001 C CNN "Fält4"
-F 5 "Panasonic" H 4650 1550 50  0001 C CNN "Manufacturer_Name"
-F 6 "ERJ-3EKF33R0V" H 4650 1550 50  0001 C CNN "Manufacturer_Part_Number"
-F 7 "667-ERJ-3EKF33R0V" H 4650 1550 50  0001 C CNN "Mouser Part Number"
-	1    4650 1550
+F 0 "R7" V 4730 2050 50  0000 C CNN
+F 1 "33" V 4650 2050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4580 2050 50  0001 C CNN
+F 3 "" H 4650 2050 50  0001 C CNN
+F 4 "1" H 4650 2050 50  0001 C CNN "Fält4"
+F 5 "Panasonic" H 4650 2050 50  0001 C CNN "Manufacturer_Name"
+F 6 "ERJ-3EKF33R0V" H 4650 2050 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "667-ERJ-3EKF33R0V" H 4650 2050 50  0001 C CNN "Mouser Part Number"
+	1    4650 2050
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED_Small LED_2
 U 1 1 5F8BDBC2
-P 4350 1550
-F 0 "LED_2" H 4350 1785 50  0000 C CNN
-F 1 "STATUS_LED" H 4350 1694 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 4350 1550 50  0001 C CNN
-F 3 "~" V 4350 1550 50  0001 C CNN
-F 4 "1" H 4350 1550 50  0001 C CNN "Fält4"
-F 5 "Kingbright" H 4350 1550 50  0001 C CNN "Manufacturer_Name"
-F 6 "APT1608EC" H 4350 1550 50  0001 C CNN "Manufacturer_Part_Number"
-F 7 "604-APT1608EC" H 4350 1550 50  0001 C CNN "Mouser Part Number"
-	1    4350 1550
+P 4350 2050
+F 0 "LED_2" H 4350 2285 50  0000 C CNN
+F 1 "STATUS_LED" H 4350 2194 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 4350 2050 50  0001 C CNN
+F 3 "~" V 4350 2050 50  0001 C CNN
+F 4 "1" H 4350 2050 50  0001 C CNN "Fält4"
+F 5 "Kingbright" H 4350 2050 50  0001 C CNN "Manufacturer_Name"
+F 6 "APT1608EC" H 4350 2050 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "604-APT1608EC" H 4350 2050 50  0001 C CNN "Mouser Part Number"
+	1    4350 2050
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 1550 4850 1550
+	4800 2050 4850 2050
 $Comp
 L power:GND #PWR?
 U 1 1 5F9F2D74
-P 4850 1550
+P 4850 2050
 AR Path="/5D8219F0/5F9F2D74" Ref="#PWR?"  Part="1" 
 AR Path="/5D6CC2CC/5F9F2D74" Ref="#PWR?"  Part="1" 
 AR Path="/5DEF6A4C/5F9F2D74" Ref="#PWR?"  Part="1" 
 AR Path="/5E49A860/5F9F2D74" Ref="#PWR?"  Part="1" 
 AR Path="/5E135D8F/5F9F2D74" Ref="#PWR0101"  Part="1" 
 AR Path="/60039BC8/5F9F2D74" Ref="#PWR0101"  Part="1" 
-F 0 "#PWR0101" H 4850 1300 50  0001 C CNN
-F 1 "GND" H 4850 1400 50  0000 C CNN
-F 2 "" H 4850 1550 50  0001 C CNN
-F 3 "" H 4850 1550 50  0001 C CNN
-	1    4850 1550
+F 0 "#PWR0101" H 4850 1800 50  0001 C CNN
+F 1 "GND" H 4850 1900 50  0000 C CNN
+F 2 "" H 4850 2050 50  0001 C CNN
+F 3 "" H 4850 2050 50  0001 C CNN
+	1    4850 2050
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	4250 1550 3400 1550
-Text Label 3850 1550 0    50   ~ 0
+	4250 2050 3400 2050
+Text Label 3850 2050 0    50   ~ 0
 LED
 $Comp
 L SamacSys_Parts:EVP-BB2A9B000 S2
@@ -1373,34 +1296,59 @@ NoConn ~ 3800 3250
 Wire Wire Line
 	3800 3250 3400 3250
 Wire Wire Line
-	3400 4550 3800 4550
+	3400 3950 3800 3950
 Wire Wire Line
-	3400 4450 3800 4450
+	3400 3750 3800 3750
 Wire Wire Line
 	1450 1300 2150 1300
 Wire Wire Line
 	900  1300 900  1600
-Text GLabel 3800 3950 2    50   Input ~ 0
-Col0
-Text GLabel 3800 4050 2    50   Input ~ 0
-Col1
-Text GLabel 3800 4150 2    50   Input ~ 0
-Col2
-Text GLabel 3800 4250 2    50   Input ~ 0
-Col3
-Text GLabel 3800 4350 2    50   Input ~ 0
-Col4
 Text GLabel 3800 4450 2    50   Input ~ 0
+Col0
+Text GLabel 3800 4150 2    50   Input ~ 0
+Col1
+Text GLabel 3800 4050 2    50   Input ~ 0
+Col2
+Text GLabel 3800 4350 2    50   Input ~ 0
+Col3
+Text GLabel 3800 4250 2    50   Input ~ 0
+Col4
+Text GLabel 3800 3750 2    50   Input ~ 0
 Row0
-Text GLabel 3800 4550 2    50   Input ~ 0
+Text GLabel 3800 3950 2    50   Input ~ 0
 Row1
 NoConn ~ 3800 3150
 NoConn ~ 3800 3350
 NoConn ~ 3800 3450
-NoConn ~ 6650 3200
-NoConn ~ 6650 3300
-NoConn ~ 6650 3400
-NoConn ~ 6650 3500
-NoConn ~ 6650 3600
-NoConn ~ 6650 3700
+NoConn ~ 3800 2450
+NoConn ~ 3800 2550
+NoConn ~ 3800 2750
+NoConn ~ 3800 1550
+NoConn ~ 3800 2150
+Wire Wire Line
+	3800 2150 3400 2150
+NoConn ~ 3800 1950
+Wire Wire Line
+	3800 1950 3400 1950
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 602567E1
+P 4250 6000
+AR Path="/5D8219F0/602567E1" Ref="#FLG?"  Part="1" 
+AR Path="/5D6CC2CC/602567E1" Ref="#FLG?"  Part="1" 
+AR Path="/5DEF6A4C/602567E1" Ref="#FLG?"  Part="1" 
+AR Path="/5E49A860/602567E1" Ref="#FLG?"  Part="1" 
+AR Path="/5E135D8F/602567E1" Ref="#FLG?"  Part="1" 
+AR Path="/5F6ACAA0/602567E1" Ref="#FLG?"  Part="1" 
+AR Path="/5F577A4E/602567E1" Ref="#FLG?"  Part="1" 
+AR Path="/60039BC8/602567E1" Ref="#FLG0101"  Part="1" 
+F 0 "#FLG0101" H 4250 6075 50  0001 C CNN
+F 1 "PWR_FLAG" H 4100 6150 50  0000 C CNN
+F 2 "" H 4250 6000 50  0001 C CNN
+F 3 "" H 4250 6000 50  0001 C CNN
+	1    4250 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 6000 4250 6200
 $EndSCHEMATC
